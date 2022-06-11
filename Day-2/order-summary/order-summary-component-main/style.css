@@ -170,3 +170,19 @@ body {
 .pricing-right a:hover {
     color: #766CF1;
 }
+
+@media screen and (max-width: 600px){
+    .main {
+        padding: 0 1.5rem 0 1.5rem;
+      }
+
+      .card {
+        width: 16.3rem;
+      }
+
+      .image img {
+        width: 16.3rem;
+      }
+
+     
+}
