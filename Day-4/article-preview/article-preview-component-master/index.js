@@ -1,22 +1,32 @@
 "use strict";
 
 const shareImgBtn = document.getElementsByClassName('author-share-image');
-
+const getwhiteBtn = document.getElementsByClassName('author-share-image-desktop-active');
 const shareImageMenuBtn = document.getElementsByClassName('share-img');
-const allInfo = document.getElementsByClassName('author-info');
+const allInfo_m = document.getElementsByClassName('author-info-m');
+const allInfo_d = document.getElementsByClassName('author-info-d');
 const allShareMenu = document.getElementsByClassName('popup-footer');
-const removeAuthorInfo = () => allInfo[0].classList.toggle('show');
-const toggleAuthorInfo = () => allInfo[0].classList.remove('show');
-const removeHideSection = () => allShareMenu[0].classList.toggle('show');
-const toggleShowSection = () => allShareMenu[0].classList.remove('show');
+const removeAuthorInfo_m = () => allInfo_m[0].classList.toggle('hide');
+const toggleAuthorInfo_m = () => allInfo_m[0].classList.remove('hide');
+const removeHideSection = () => allShareMenu[0].classList.toggle('hide');
+const toggleShowSection = () => allShareMenu[0].classList.remove('hide');
+const removeNormalShareIcon = () => shareImgBtn[1].classList.toggle('hide');
+const toggleWhiteShareIcon = () => getwhiteBtn[0].classList.remove('hide');
 
 shareImgBtn[0].addEventListener("click", function(){
     toggleShowSection();
-    removeAuthorInfo();
+    removeAuthorInfo_m();
+    
+}) ;
+
+shareImgBtn[1].addEventListener("click", function(){
+    toggleShowSection();
+    removeNormalShareIcon();
+    toggleWhiteShareIcon();
 }) ;
 
 shareImageMenuBtn[0].addEventListener("click", function(){
-    toggleAuthorInfo();
+    toggleAuthorInfo_m();
     removeHideSection();
 }) ;
 
