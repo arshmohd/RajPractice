@@ -189,30 +189,8 @@ body {
     align-items: center;
   }
 
-  .author-share-image-desktop-active-hidden {
-    background-color: #48556a;
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 50%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-  }
-
   .author-share-image-desktop-active img {
     width: 0.7rem;
-  }
-
-  .point-traingleDown {
-    width: 0;
-    height: 0;
-    border-left: 0.5rem solid transparent;
-    border-right: 0.5rem solid transparent;
-    border-top: 1rem solid #48556a;
-    position: absolute;
-    left: 33.2rem;
-    top: 9.5rem;
-  
   }
 }
 
