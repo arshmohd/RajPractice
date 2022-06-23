@@ -81,6 +81,7 @@ button {
   font-size: 0.75rem;
   line-height: 1.25rem;
   /* identical to box height, or 167% */
+  border: 2px solid transparent;
 }
 
 .sedan-btn,
@@ -100,14 +101,18 @@ button {
 
 .sedan-btn {
   color: #e28625;
+  /* border: 2px solid #e28625; */
 }
 
 .suv-btn {
   color: #006971;
+  /* border: 2px solid #006971; */
 }
 
 .luxury-btn {
   color: #004140;
+  /* border: 2px solid #004140; */
+  /* border: 2px solid transparent; */
 }
 
 .end-cat{
