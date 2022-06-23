@@ -18,7 +18,6 @@ body {
   width: 57rem;
   height: 22.5rem;
   border-radius: 0.3rem;
-  
 }
 
 .container {
@@ -30,15 +29,14 @@ body {
   margin-right: 4rem;
 }
 
-
 .content-image {
-  background-image: url('./images/image-header-desktop.jpg');
+  background-image: url("./images/image-header-desktop.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   height: 22.5rem;
   width: 62.5rem;
   border-radius: 0 0.3rem 0.3rem 0;
-  background-color: #AB5CDB;
+  background-color: #ab5cdb;
   background-blend-mode: multiply;
   opacity: 0.75;
 }
@@ -50,23 +48,22 @@ body {
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 2.2rem;
-  
 }
 
 .content-text span {
-    color: #AB5CDB
+  color: #ab5cdb;
 }
 
-.content-text p {    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.75rem;
-    line-height: 1.25rem; 
-    color: #FFFFFF;
-    mix-blend-mode: normal;
-    opacity: 0.75;
-    margin-top: 1.25rem;
+.content-text p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  margin-top: 1.25rem;
 }
 
 .stats {
@@ -85,15 +82,50 @@ body {
 }
 
 .stats-num p {
-    font-family: 'Lexend Deca';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.5rem;
-    line-height: 0.5rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    mix-blend-mode: normal;
-    opacity: 0.6;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.5rem;
+  line-height: 0.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.6;
 }
 
+@media screen and (max-width: 600px) {
+  .card {
+    width: 16.3rem;
+    height: auto;
+    border-radius: 0.3rem;
+  }
+
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .content-text {
+    text-align: center;
+    padding: 2rem 1rem 2rem 1rem;
+    margin-right: 0;
+  }
+
+  .content-image {
+    background-image: url("./images/image-header-mobile.jpg");
+    width: 16.3rem;
+    height: 12rem;
+    border-radius: 0.3rem 0.3rem 0 0;
+  }
+
+  .content-text h1 {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
+
+  .stats {
+    flex-direction: column;
+    height: 11rem;
+    margin-top: 2.5rem;
+  }
+}
