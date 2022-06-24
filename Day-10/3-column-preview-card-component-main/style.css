@@ -10,6 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  /* color: red; */
 }
 
 .container {
@@ -32,12 +33,11 @@ body {
 
 .suv {
   background: #006971;
-  
 }
 
 .luxury {
   background: #004140;
-  
+  border-radius: 0 0.4rem 0.4rem 0;
 }
 .category img {
   margin-top: 2.3rem;
@@ -90,7 +90,7 @@ button {
   padding: 0.7rem 1.7rem 0.8rem 1.7rem;
 }
 
- .sedan-btn:hover,
+.sedan-btn:hover,
 .suv-btn:hover,
 .luxury-btn:hover {
   color: #fff;
@@ -115,8 +115,54 @@ button {
   /* border: 2px solid transparent; */
 }
 
-.end-cat{
+/* .end-cat{
     width: 0.5rem;
     border-radius: 0 0.4rem 0.4rem 0;
     background-color: #e28625;
+} */
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sedan {
+    border-radius: 0.4rem 0.4rem 0 0;
+  }
+
+  .suv {
+    border-radius: 0 0 0 0;
+  }
+
+  .luxury {
+    border-radius: 0 0 0.4rem 0.4rem;
+  }
+
+  @media (hover: hover) {
+    .sedan-btn:hover,
+    .suv-btn:hover,
+    .luxury-btn:hover {
+      background-color: white;
+      border: 2px solid transparent;
+      color:initial;
+    }
+  }
+
+  /* .sedan-btn:hover{
+        color: #e28625;
+        background-color: white;
+        border: 2px solid transparent;
+      }
+
+      .suv-btn:hover{
+        color: #006971;
+        background-color: white;
+        border: 2px solid transparent;
+      }
+
+      .luxury-btn:hover{
+        color: #004140;
+        background-color: white;
+        border: 2px solid transparent;
+      } */
 }
