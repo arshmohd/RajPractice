@@ -21,7 +21,6 @@ body {
   left: 0;
   top: 0;
   width: 50rem;
-  
 }
 
 .image-bg-bottom {
@@ -29,7 +28,6 @@ body {
   bottom: 0;
   right: 0;
 }
-
 
 .main-text {
   display: grid;
@@ -45,7 +43,7 @@ body {
   grid-area: leftText;
   display: flex;
   flex-direction: column;
-  width: 18.25rem;
+  text-align: center;
 }
 
 .left-text h1 {
@@ -99,15 +97,7 @@ body {
   justify-content: flex-end;
 }
 
-.start-N-text-1 {
-  background-color: #f7f2f7;
-  display: flex;
-  align-items: center;
-  padding: 1rem 4.5rem 1rem 1.56rem;
-  border-radius: 0.4rem;
-}
-
-.start-N-text-2 {
+.start-N-text {
   background-color: #f7f2f7;
   display: flex;
   align-items: center;
@@ -116,15 +106,7 @@ body {
   margin-top: 0.7rem;
 }
 
-.start-N-text-1 img {
-  width: 0.6rem;
-  margin-right: 0.3rem;
-}
-.start-N-text-2 img {
-  width: 0.6rem;
-  margin-right: 0.3rem;
-}
-.start-N-text-3 img {
+.start-N-text img {
   width: 0.6rem;
   margin-right: 0.3rem;
 }
@@ -141,15 +123,6 @@ body {
   color: #512051;
 }
 
-.start-N-text-3 {
-  background-color: #f7f2f7;
-  display: flex;
-  align-items: center;
-  padding: 1rem 4.5rem 1rem 1.56rem;
-  border-radius: 0.4rem;
-  margin-top: 0.7rem;
-}
-
 .testimonials {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -160,10 +133,6 @@ body {
 
 .testi {
   color: white;
-  display: flex;
-}
-
-.testi {
   display: flex;
   flex-direction: column;
 }
@@ -217,15 +186,76 @@ body {
 }
 
 .testimonial-text {
-  font-family: 'League Spartan';
-font-style: normal;
-font-weight: 500;
-font-size: 0.8rem;
-line-height: 1.1rem;
-margin-top: 1.25rem;
-/* or 169% */
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+  margin-top: 1.25rem;
+  /* or 169% */
 
-letter-spacing: -0.232143px;
+  letter-spacing: -0.232143px;
 
-color: #FFFFFF
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .main-text {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "leftText"
+      "rightRating";
+  }
+
+  .left-text {
+    width: 18.25rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .left-text h1 {
+    align-items: center;
+  }
+
+  .stars {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 0.3rem;
+    align-items: center;
+    margin-bottom: 0.3rem;
+  }
+
+  .start-N-text {
+    flex-direction: column;
+
+    width: 100%;
+    padding: 0.7rem 0rem 0.7rem 0rem;
+  }
+
+  .start-N-text img {
+    margin-right: 0rem;
+  }
+
+  .text {
+    margin-left: 0rem;
+    width: 100%;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 1.2rem;
+
+    width: 100%;
+    /* max-width: 16.31rem; */
+  }
+
+  .testi-3 {
+    justify-content: flex-start;
+  }
 }
